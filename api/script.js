@@ -14,3 +14,7 @@ function clr()
 {
   document.getElementById("textval").value = "";
 }
+function back() {
+  var value = document.getElementById("textval").value;
+  document.getElementById("textval").value = value.substr(0, value.length - 1);
+}
